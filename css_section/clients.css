@@ -1,0 +1,13 @@
+.clients{
+    background-color: var(--color-secondary);
+    padding: 0 var(--padding-d-l-h);
+    display: flex;
+    justify-content: space-between;
+    height: calc(2rem + 5vw);
+}
+
+.clients img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

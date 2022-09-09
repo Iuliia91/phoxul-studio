@@ -1,0 +1,43 @@
+.header{
+    background-color: var(--color-secondary);
+    padding: var(--padding-d-m-v) var(--padding-d-l-h);
+    column-gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .hamburger{
+    position: fixed;
+  }
+  
+  .header::after{
+    content:'';
+    background-color: var(--color-secondary);
+    position: absolute;
+    bottom: -49.5rem;
+    left: 0;
+    height: 50rem;
+    width: 100%;
+    clip-path: polygon(0% 0%,100% 0%, 100% 50%, 0% 100%, 0% 0%);
+    z-index: -1;
+  }
+  
+  .logo{
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+  
+  .header nav{
+  
+    display: flex;
+    gap:2rem;
+  }
+  
+  .header nav a{
+    font-size: 1.5rem;
+    color: var(--color-quaternary);
+    transition: all 0.2s ease-in-out;;
+  }
+  
